@@ -37,6 +37,7 @@ $(function () {
     
     $("img").each(function () {
         $(this).wrap("<div class='blur'></div>");
+        $(this).attr("referrerpolicy", "no-referrer");
         var imgsrc = $(this).attr("data-src");
         $(this).attr("src", imgsrc);
         console.log(imgsrc);
